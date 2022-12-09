@@ -13,6 +13,8 @@
 		50125FCD2942630400E19BA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50125FCB2942630400E19BA2 /* Main.storyboard */; };
 		50125FCF2942630700E19BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50125FCE2942630700E19BA2 /* Assets.xcassets */; };
 		50125FD22942630700E19BA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50125FD02942630700E19BA2 /* LaunchScreen.storyboard */; };
+		50125FDB2942648400E19BA2 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 50125FDA2942648400E19BA2 /* SpringAnimation */; };
+		50125FDD294328A400E19BA2 /* animationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50125FDC294328A400E19BA2 /* animationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		50125FCE2942630700E19BA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50125FD12942630700E19BA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50125FD32942630700E19BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50125FDC294328A400E19BA2 /* animationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50125FDB2942648400E19BA2 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				50125FCE2942630700E19BA2 /* Assets.xcassets */,
 				50125FD02942630700E19BA2 /* LaunchScreen.storyboard */,
 				50125FD32942630700E19BA2 /* Info.plist */,
+				50125FDC294328A400E19BA2 /* animationModel.swift */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = CoreAnimation;
+			packageProductDependencies = (
+				50125FDA2942648400E19BA2 /* SpringAnimation */,
+			);
 			productName = CoreAnimation;
 			productReference = 50125FC22942630400E19BA2 /* CoreAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 50125FB92942630400E19BA2;
+			packageReferences = (
+				50125FD92942648400E19BA2 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 50125FC32942630400E19BA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50125FDD294328A400E19BA2 /* animationModel.swift in Sources */,
 				50125FCA2942630400E19BA2 /* ViewController.swift in Sources */,
 				50125FC62942630400E19BA2 /* AppDelegate.swift in Sources */,
 				50125FC82942630400E19BA2 /* SceneDelegate.swift in Sources */,
@@ -302,9 +314,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yauheni-Hraudzin.CoreAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Yauheni-Hraudzin.CoreAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50125FD92942648400E19BA2 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50125FDA2942648400E19BA2 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50125FD92942648400E19BA2 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50125FBA2942630400E19BA2 /* Project object */;
 }
